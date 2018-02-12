@@ -60,3 +60,17 @@ a {
     text-align: center;
     padding-bottom: 50px;
 }
+
+@media (max-width: 400px) {
+    .devicon-github-plain-wordmark, 
+    .devicon-javascript-plain,
+    .devicon-react-original-wordmark,
+    .devicon-bootstrap-plain-wordmark,
+    .devicon-css3-plain-wordmark,
+    .devicon-html5-plain-wordmark,
+    .devicon-php-plain,
+    .devicon-visualstudio-plain {
+    font-size: 120px;
+    margin-left: 20px;
+    }
+  }
