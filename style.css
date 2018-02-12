@@ -1,6 +1,7 @@
 body {
     background-color: #fafafa;
 }
+
 .paper {
     background-color: #fafafa;
 }
@@ -42,6 +43,7 @@ a {
     background-color: #e3f2fd;
 }
 
+/*Styling for icons in Coding Toolbox*/
 .devicon-github-plain-wordmark, 
 .devicon-javascript-plain,
 .devicon-react-original-wordmark,
@@ -52,6 +54,8 @@ a {
 .devicon-visualstudio-plain {
     font-size: 150px;
 }
+
+/*Adjust alignment of icons*/
 .coding-skills {
     text-align: center;
     padding-bottom: 50px;
