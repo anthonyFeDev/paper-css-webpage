@@ -1,65 +1,157 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/4.9.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/4.9.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/4.9.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/4.9.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/4.9.1/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--PaperCSS-->
+    <link rel="stylesheet" href="https://unpkg.com/papercss@1.4.1/dist/paper.min.css">
+    <!--DEVICON-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>E-Resume</title>
+</head>
+<body>
+    <!--About Me-->
+    <div class="paper container border-dashed border-thick border-primary">
+        <div class="row">
+            <div class="sm-12 section-title"><h1>Anthony Ruffin</h1></div>
+        </div>
+        <div class="row">
+            <div class="sm-12 md-4 col description"><h3>Self Taught Developer</h3></div>
+            <div class="sm-12 md-4 col description"><h3>Software Tester</h3></div>
+            <div class="sm-12 md-4 col description"><h3>Computer Nerd</h3></div>
+        </div>
+        <!--Modal: Contact Info-->
+        <div class="row flex-spaces child-borders">
+            <label class="paper-btn margin button" for="modal-1">View Contact Info!</label>
+        </div>
+        <input class="modal-state" id="modal-1" type="checkbox">
+        <div class="modal">
+            <label class="modal-bg" for="modal-1"></label>
+            <div class="modal-body">
+                <label class="btn-close" for="modal-1">X</label>
+                <h4 class="modal-title">Contact Details</h4>
+                <p class="email">aruffincs@gmail.com</p>
+                <p class="phone">757-450-3114</p>
+                <p class="github">GitHub: https://github.com/anthonyFeDev</p>
+            </div>
+        </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    <!--Work Experience-->
+    <div class="paper container border-dashed border-thick border-primary">
+        <div class="row">
+            <div class="col-12 section-title"><h1>Work Xp</h1></div>
+        </div>
+        <div class="row">
+            <div class="sm-12 md-4">
+                <h4 class="category">Software Testing</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="sm-12 md-4 col project-name"><h4>Google SMB:</h4></div>
+            <div class="sm-12 md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Small Thanks with Google</h4>
+                        <p class="card-text">
+                            This is a web application where business owners can go
+                            find and order business toolkits. These toolkits contain posters, flyers, and business cards that have their business reviews on them.
+                            I worked on phases 1 and 2 of this project.
+                        </p>
+                        <button class="button"><a href="https://smallthanks.withgoogle.com" target="_blank">Go here!</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="sm-12 md-4 col project-name"><h4>Youtube DejaView:</h4></div>
+            <div class="sm-12 md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Deja:View</h4>
+                        <p class="card-text">
+                            This web application is a video game quiz where users can test their knowledge of this weeks most
+                            popular Youtube videos. This application was built with Angular.
+                        </p>
+                        <button class="button"><a href="https://dejaview.withyoutube.com" target="_blank">Go here!</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="sm-12 md-4 col project-name"><h4>Rick and Morty:</h4></div>
+            <div class="sm-12 md-8"> 
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Dont Even Trip Road Trip</h4>
+                        <p class="card-text">
+                            This SPA (single page application) allows users to view where 
+                            the Rickmobile is currently located, and where it will be headed next. They can also view future stop dates, and instagram posts.
+                        </p>
+                        <button class="button"><a href="https://www.adultswim.com/promos/rickmobile/" target="_blank">Go here!</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+             <h4 class="category">Business Analyst</h4>
+        </div>
+        <div class="row">
+            <div class="sm-12 md-4 col">
+                <h4 class="company">Decisions LLC:</h4>
+            </div>
+            <div class="sm-12 md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Technical Business Analysts</h4>
+                        <p class="card-text">
+                            <ul>
+                                <li>Analyze business processes to determine workflows that can be automated</li>
+                                <li>Prototype and build workflows using the Decisions graphical programming language</li>
+                                <li>Create technical documentation to detail new and existing features of new releases of Decisions</li>
+                                <li>Perform software testing to support the release of Decisions 4.0</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Coding Skills-->
+    <div class="paper container border-dashed border-thick border-primary">
+        <div class="row">
+            <h1 class="sm-12 section-title">Coding ToolBox</h1>
+            <p class="sm-12 section-subtitle">(What I am familiar with)</p>
+        </div>
+        <div class="row coding-skills">
+            <div class="sm-12 md-3">
+                <i class="devicon-github-plain-wordmark colored"></i>
+            </div>
+            <div class="sm-12 md-3">
+                <i class="devicon-javascript-plain colored"></i>
+            </div>
+            <div class="sm-12 md-3">
+                <i class="devicon-react-original-wordmark colored"></i>
+            </div>
+            <div class="sm-12 md-3">
+                <i class="devicon-bootstrap-plain-wordmark colored"></i>
+            </div>
+        </div>
+        <div class="row coding-skills">
+            <div class="sm-12 md-3">
+                <i class="devicon-css3-plain-wordmark colored"></i>
+            </div>
+            <div class="sm-12 md-3">
+                <i class="devicon-html5-plain-wordmark colored"></i>
+            </div>
+            <div class="sm-12 md-3">
+                <i class="devicon-php-plain colored"></i>
+            </div>
+            <div class="sm-12 md-3">
+                <i class="devicon-visualstudio-plain colored"></i>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

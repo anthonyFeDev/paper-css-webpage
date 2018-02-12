@@ -1,0 +1,18 @@
+[debug] [2018-02-12T22:49:06.056Z] ----------------------------------------------------------------------
+[debug] [2018-02-12T22:49:06.058Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\antho\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase use production
+[debug] [2018-02-12T22:49:06.058Z] CLI Version:   3.17.4
+[debug] [2018-02-12T22:49:06.059Z] Platform:      win32
+[debug] [2018-02-12T22:49:06.059Z] Node Version:  v8.9.4
+[debug] [2018-02-12T22:49:06.059Z] Time:          Mon Feb 12 2018 17:49:06 GMT-0500 (Eastern Standard Time)
+[debug] [2018-02-12T22:49:06.059Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-02-12T22:49:06.070Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-02-12T22:49:06.070Z] > authorizing via signed-in user
+[debug] [2018-02-12T22:49:06.073Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+  
+ Mon Feb 12 2018 17:49:06 GMT-0500 (Eastern Standard Time)
+[debug] [2018-02-12T22:49:38.798Z] Error: getaddrinfo ENOTFOUND admin.firebase.com admin.firebase.com:443
+    at errnoException (dns.js:50:10)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:92:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOTFOUND admin.firebase.com admin.firebase.com:443
