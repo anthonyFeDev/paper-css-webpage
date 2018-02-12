@@ -6,12 +6,13 @@ body {
 }
 
 .container{
-    width: 100%;
+    width: 95%;
     margin-top: 10%;
 }
 
 .section-title {
     color: #757575;
+    text-align: center;
 }
 .description {
     color: #002171;
@@ -30,5 +31,9 @@ a {
 .card-title,
 .project-name {
     font-weight: bold;
+
 }
  
+.button {
+    background-color: #e3f2fd;
+}
