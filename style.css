@@ -1,8 +1,19 @@
+*{
+    margin: 0;
+    padding:0;
+}
 .paper {
-    background-color: rgb(252, 181, 181);
+    background-color: #212121;
 }
 
 .container{
     margin-top: 30px;
     width: 95%;
+}
+
+.section-title {
+    color: #f5f5f5;
+}
+.description {
+    color: #b3e5fc;
 }
