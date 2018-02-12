@@ -8,6 +8,7 @@ body {
 .container{
     width: 95%;
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .section-title {
@@ -39,4 +40,19 @@ a {
  
 .button {
     background-color: #e3f2fd;
+}
+
+.devicon-github-plain-wordmark, 
+.devicon-javascript-plain,
+.devicon-react-original-wordmark,
+.devicon-bootstrap-plain-wordmark,
+.devicon-css3-plain-wordmark,
+.devicon-html5-plain-wordmark,
+.devicon-php-plain,
+.devicon-visualstudio-plain {
+    font-size: 150px;
+}
+.coding-skills {
+    text-align: center;
+    padding-bottom: 50px;
 }
