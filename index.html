@@ -5,26 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://unpkg.com/papercss@1.4.1/dist/paper.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="paper container">
+    <div class="paper container border-dashed border-thick border-primary">
         <div class="row">
-            <div class="sm-12 md-6 col section-title"><h1>Anthony Ruffin</h1></div>
-            <div class="sm-12 md-6 col description"><h3>Self Taught Developer</h3></div>
+            <div class="sm-12 section-title"><h1>Anthony Ruffin</h1></div>
         </div>
         <div class="row">
-            <div class="sm-12 md-6 col description"><h3>Software Tester</h3></div>
-            <div class="sm-12 md-6 col description"><h3>Computer Nerd</h3></div>
+            <div class="sm-12 md-4 col description"><h3>Self Taught Developer</h3></div>
+            <div class="sm-12 md-4 col description"><h3>Software Tester</h3></div>
+            <div class="sm-12 md-4 col description"><h3>Computer Nerd</h3></div>
+        </div>
+        <div class="row flex-spaces child-borders">
+            <label class="paper-btn margin button" for="modal-1">View Contact Info!</label>
+        </div>
+        <input class="modal-state" id="modal-1" type="checkbox">
+        <div class="modal">
+            <label class="modal-bg" for="modal-1"></label>
+            <div class="modal-body">
+                <label class="btn-close" for="modal-1">X</label>
+                <h4 class="modal-title">Contact Details</h4>
+                <p class="email">aruffincs@gmail.com</p>
+                <p class="phone">757-450-3114</p>
+                <p class="github">GitHub: https://github.com/anthonyFeDev</p>
+            </div>
         </div>
     </div>
-    <div class="paper container">
+    <div class="paper container border-dashed border-thick border-primary">
         <div class="row">
-            <div class="col-12 col section-title"><h1>Work Xp</h1></div>
+            <div class="col-12 section-title"><h1>Work Xp</h1></div>
         </div>
         <div class="row">
-             <h4 class="category">Software Testing</h4>
+            <div class="sm-12 md-4">
+                <h4 class="category">Software Testing</h4>
+            </div>
         </div>
         <div class="row">
             <div class="sm-12 md-4 col project-name"><h4>Google SMB:</h4></div>
@@ -59,10 +76,10 @@
         </div>
         <div class="row">
             <div class="sm-12 md-4 col project-name"><h4>Rick and Morty:</h4></div>
-            <div class="sm-12 md-8">
+            <div class="sm-12 md-8"> 
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Dont Even Trip Roadtrip</h4>
+                        <h4 class="card-title">Dont Even Trip Road Trip</h4>
                         <p class="card-text">
                             This SPA (single page application) allows users to view where 
                             the Rickmobile is currently located, and where it will be headed next. They can also view future stop dates, and instagram posts.
@@ -72,7 +89,35 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+             <h4 class="category">Business Analyst</h4>
+        </div>
+        <div class="row">
+            <div class="sm-12 md-4 col">
+                <h4 class="company">Decisions LLC:</h4>
+            </div>
+            <div class="sm-12 md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Technical Business Analysts</h4>
+                        <p class="card-text">
+                            <ul>
+                                <li>Analyze processes to determine how automation can be applied</li>
+                                <li>Prototype and build workflows using the Decisions graphical programming language</li>
+                                <li>Create technical documentation to detail new and existing features of Decisions 4.0</li>
+                                <li>Perform software testing to support the release of Decisions 4.0</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    
+    <div class="paper container border-dashed border-thick border-primary">
+        <div class="row">
+            <h1 class="sm-12 section-title">Coding ToolBox</h1>
+            <p class="sm-12 section-subtitle">(What I am familiar with)</p>
+        </div>
+    </div>
 </body>
 </html>

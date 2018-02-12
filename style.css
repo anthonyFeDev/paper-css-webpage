@@ -1,5 +1,5 @@
 body {
-    background-color: #e0e0e0;
+    background-color: #fafafa;
 }
 .paper {
     background-color: #fafafa;
@@ -7,17 +7,20 @@ body {
 
 .container{
     width: 95%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .section-title {
     color: #757575;
     text-align: center;
 }
+
+.section-subtitle {
+    text-align: center;
+}
 .description {
     color: #002171;
     text-align: center;
-    padding: 10px;
 }
 a {
     text-decoration: none;
