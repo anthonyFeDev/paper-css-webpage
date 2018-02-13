@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 body {
     background-color: #fafafa;
 }
@@ -24,9 +28,6 @@ body {
     color: #002171;
     text-align: center;
 }
-a {
-    text-decoration: none;
-}
 
 .card{ 
     background-color: #fafafa;
@@ -36,7 +37,6 @@ a {
 .card-title,
 .project-name {
     font-weight: bold;
-
 }
  
 .button {
@@ -60,17 +60,5 @@ a {
     text-align: center;
 }
 
-@media (max-width: 400px) {
-    .devicon-github-plain-wordmark, 
-    .devicon-javascript-plain,
-    .devicon-react-original-wordmark,
-    .devicon-bootstrap-plain-wordmark,
-    .devicon-css3-plain-wordmark,
-    .devicon-html5-plain-wordmark,
-    .devicon-php-plain,
-    .devicon-visualstudio-plain {
-        font-size: 120px;
-    }
-  }
 
   
