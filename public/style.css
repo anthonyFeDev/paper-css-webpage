@@ -9,6 +9,13 @@ a {
 
 body {
     background-color: #fafafa;
+    background: linear-gradient(
+    to bottom,
+    #2196f3 1%,
+    #f9f9f9 10%
+    );
+
+    background-size: 100% 20px;
 }
 
 .paper {
