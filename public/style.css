@@ -43,6 +43,7 @@ body {
 .card{ 
     background-color: #fafafa;
     border: solid 2px #212121;
+    cursor: default;
 }
 
 .category,
