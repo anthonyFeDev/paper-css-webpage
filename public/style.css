@@ -30,10 +30,12 @@ body {
 .section-title {
     color: #616161;
     text-align: center;
+    cursor: default;
 }
 
 .section-subtitle {
     text-align: center;
+    cursor: default;
 }
 .description {
     color: #212121;
@@ -50,6 +52,7 @@ body {
 .card-title,
 .project-name {
     font-weight: bold;
+    cursor: default;
 }
  
 .button {
