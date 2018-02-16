@@ -17,6 +17,14 @@ body {
     background-size: 100% 20px;
 }
 
+img {
+    border-radius: 50%;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -50px;
+}
+
 .paper {
     background-color: #fafafa;
 }
